@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toggle/Screens/home_screen.dart';
 import 'package:toggle/Services/auth_service.dart';
 class SignInBloc with ChangeNotifier {
   String email;
@@ -18,6 +19,7 @@ class SignInBloc with ChangeNotifier {
         if (uid != null) {
           _userUID = uid;
           notifyListeners();
+          Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomeScreen()));
         }
       },
     );

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:toggle/Provider/AuthBloc/signin_bloc.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _provider = Provider.of<SignInBloc>(context);
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -21,12 +24,12 @@ class LoginScreen extends StatelessWidget {
             child: Theme(
               data: ThemeData(primaryColor: Colors.black12),
               child: TextField(
+                onChanged: (String email) => _provider.email = email,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(130),
                     ),
                     hintText: 'Email address',
-                    focusColor: Colors.red,
                     isDense: true,
                     fillColor: Color(0xffF7F8FA),
                     filled: true),
@@ -40,6 +43,7 @@ class LoginScreen extends StatelessWidget {
               data: ThemeData(primaryColor: Colors.black12),
               child: TextField(
                 obscureText: true,
+                onChanged: (String password) => _provider.password = password,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(130),
@@ -56,8 +60,9 @@ class LoginScreen extends StatelessWidget {
           SizedBox(height: 10),
           Container(
             width: MediaQuery.of(context).size.width * 0.5,
+            height: 40,
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () => _provider.signIn(context),
               color: Color(0xffFD2E64),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0)),
