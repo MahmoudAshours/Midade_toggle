@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:toggle/Provider/AuthBloc/error_handlerBloc.dart';
 import 'package:toggle/Services/base_service.dart'; 
 
 class AuthService implements BaseAuth {

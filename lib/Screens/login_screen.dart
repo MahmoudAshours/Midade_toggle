@@ -8,21 +8,14 @@ class LoginScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            child: Theme(
-              data: ThemeData(primaryColor: Colors.black12),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(130),
-                    ),
-                    focusColor: Colors.red,
-                    isDense: true,
-                    fillColor: Color(0xffF7F8FA),
-                    filled: true),
-              ),
+          Center(
+            child: Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: AssetImage('assets/midade.png'))),
             ),
-            width: 230,
           ),
           Container(
             child: Theme(
@@ -32,6 +25,7 @@ class LoginScreen extends StatelessWidget {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(130),
                     ),
+                    hintText: 'Email address',
                     focusColor: Colors.red,
                     isDense: true,
                     fillColor: Color(0xffF7F8FA),
@@ -40,6 +34,44 @@ class LoginScreen extends StatelessWidget {
             ),
             width: 230,
           ),
+          SizedBox(height: 10),
+          Container(
+            child: Theme(
+              data: ThemeData(primaryColor: Colors.black12),
+              child: TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(130),
+                    ),
+                    hintText: 'Password',
+                    focusColor: Colors.red,
+                    isDense: true,
+                    fillColor: Color(0xffF7F8FA),
+                    filled: true),
+              ),
+            ),
+            width: 230,
+          ),
+          SizedBox(height: 10),
+          Container(
+            width: MediaQuery.of(context).size.width * 0.5,
+            child: RaisedButton(
+              onPressed: () {},
+              color: Color(0xffFD2E64),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0)),
+              elevation: 2,
+              highlightElevation: 2,
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  'Login',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );

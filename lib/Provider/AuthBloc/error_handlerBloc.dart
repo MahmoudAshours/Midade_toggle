@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:volcano/Models/error_messages.dart';
-import 'package:volcano/Utils/login_dialog.dart';
+import 'package:toggle/Models/error_messages.dart';
+import 'package:toggle/Utils/login_dialog.dart';
 
 class ErrorActions {
   final String errorMessages;
