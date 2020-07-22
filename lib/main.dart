@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:toggle/Screens/login_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(TogglApp());
 }
 
-class MyApp extends StatelessWidget {
+class TogglApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Midade toggle',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginScreen(),
     );
   }
 }

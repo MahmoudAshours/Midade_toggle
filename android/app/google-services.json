@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "947174286024",
+    "firebase_url": "https://toggl-ffbef.firebaseio.com",
+    "project_id": "toggl-ffbef",
+    "storage_bucket": "toggl-ffbef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947174286024:android:d02623fb54d98ff7d8fbfd",
+        "android_client_info": {
+          "package_name": "toggl.midade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947174286024-ogtur9krfvkajn322vtog4o2k2fccl5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKkNm0xH7mK26JFazmIkHPOGfyxLHebhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947174286024-ogtur9krfvkajn322vtog4o2k2fccl5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
