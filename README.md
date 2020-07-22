@@ -3,10 +3,11 @@
 A flutter project for using Toggl in Midade corporation.
 
 # Tasks 
-- [ ] Build project structure.
-- [ ] Build project database schema.
-- [ ] Build project UI.
-- [ ] User login module.
+- [x] Complete project analysis.
+- [x] Build project structure.
+- [] Build project database schema.
+- [x] Build project UI.
+- [x] User login module.
 - [ ] Admin Login module.
 
 # Login
